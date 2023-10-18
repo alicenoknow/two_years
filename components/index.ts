@@ -4,5 +4,6 @@ import Answer from "./Answer";
 import WelcomeButton from "./WelcomeButton";
 import Oops from "./Oops";
 import Question from "./Question";
+import Card from "./Card";
 
-export { Welcome, NiceButton, Answer, WelcomeButton, Oops, Question };
+export { Welcome, Card, NiceButton, Answer, WelcomeButton, Oops, Question };

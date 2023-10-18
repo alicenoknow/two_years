@@ -37,7 +37,7 @@ const Answer: React.FC<AnswerProps> = ({
   return (
     <div className={`p-4 flex flex-col items-center ${imageClasses}`}>
       {imageOrGifUrl && (
-        <div className="mt-4">
+        <div className="mt-4 p-4">
           <Image
             src={imageOrGifUrl}
             priority

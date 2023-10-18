@@ -2,9 +2,12 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 import { Answer, Oops } from ".";
 import { QUESTIONS_CONFIG } from "./questions";
+
+const IMAGE_SIZE = 300;
 
 const Question = ({ num }: { num: number }) => {
   const router = useRouter();
@@ -15,7 +18,7 @@ const Question = ({ num }: { num: number }) => {
   }
 
   const question = QUESTIONS_CONFIG[num - 1];
-  const { questionText, answers, correctAnswerIdx } = question;
+  const { questionText, questionImage, answers, correctAnswerIdx } = question;
 
   if (correctAnswerIdx >= answers.length) {
     return <Oops />;
@@ -37,11 +40,21 @@ const Question = ({ num }: { num: number }) => {
 
   return (
     <div>
-      <div className="flex items-center justify-center text-3xl p-24 pt-16">{`Pytanko ${num}:`}</div>
+      <div className="flex items-center justify-center text-3xl p-16 pt-16">{`Pytanko ${num}:`}</div>
       <div className="flex items-center justify-center text-xl p-4">
         {questionText}
       </div>
+      <div className="flex items-center justify-center text-xl p-4">
+        {questionImage && <Image
+          src={questionImage}
+          priority
+          alt="question image"
+          width={IMAGE_SIZE}
+          height={IMAGE_SIZE}
+        />}
+      </div>
       <div className="flex flex-row items-center justify-center">
+
         {answers.map((answer, idx) => (
           <Answer
             key={idx}

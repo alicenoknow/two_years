@@ -2,11 +2,9 @@ import { Welcome, WelcomeButton } from '@/components'
 
 /**
  * todo
- * 1. prepare images
- * 2. style answer component
- * 3. test gif in answer
- * 4. prepare question component
- * 5. final animation
+ * 3. prepare results
+ * 4. prepare welcome
+ * 5. final animation (on hover/click)
  * 6. croissant background animation
  *  
  */
