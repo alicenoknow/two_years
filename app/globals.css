@@ -60,13 +60,25 @@ body {
 /* end hide scrollbar */
 
 /* card animation */
-.showme {
+.showme-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 7s, opacity 7s;
+}
+
+.showme-right {
   opacity: 0;
   transform: translateX(100%);
   transition: transform 7s, opacity 7s;
 }
 
-.clickhere:hover + .showme {
+.clickhere:hover + .showme-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.clickhere:hover + .showme-right {
   opacity: 1;
   transform: translateX(0);
   transition: transform 0.5s, opacity 0.5s;

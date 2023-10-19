@@ -11,7 +11,7 @@ interface Question {
 export const QUESTIONS_CONFIG: ReadonlyArray<Question> = [
   {
     questionImage: "/images/sad_man.png",
-    questionText: "Gdy nie widzę mojej dziewczyny dłużej niż tydzień, to bardzo za nią tęsknię i nie mogę przestać o niej myśleć.",
+    questionText: "Gdy nie widzę mojej dziewczyny dłużej niż dzień, to bardzo za nią tęsknię i nie mogę przestać o niej myśleć.",
     answers: [
       {
         text: "zdecydowanie tak",
@@ -47,7 +47,7 @@ export const QUESTIONS_CONFIG: ReadonlyArray<Question> = [
     correctAnswerIdx: 0,
   },
   {
-    questionText: "Wymarzone zwierzątko to ...",
+    questionText: "Zwierzątko, które będziemy mieć to ...",
     answers: [
       {
         text: "piesek",
@@ -132,11 +132,11 @@ export const QUESTIONS_CONFIG: ReadonlyArray<Question> = [
     answers: [
       {
         text: "❤",
-        imageOrGifUrl: "/love.gif",
+        imageOrGifUrl: "/gifs/love.gif",
       },
       {
         text: "🤬",
-        imageOrGifUrl: "/fight.gif",
+        imageOrGifUrl: "/gifs/fight.gif",
       },
     ],
     correctAnswerIdx: 0,

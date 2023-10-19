@@ -18,7 +18,7 @@ export const RESULTS_DATA: ReadonlyArray<AnimatedResult> = [
     },
     {
         idx: 3,
-        text: "W związku można mieć różne preferencje, a wasza zdolność do akceptowania i szanowania tych różnic jest godna podziwu. To, że potraficie docenić indywidualne gusta i potrzeby swojego partnera, jest dowodem na waszą wzajemną troskę i głębokie zrozumienie.",
+        text: "Umiecie wyrażać miłość i mówić to magiczne słowo - 'kocham'. Wasza zdolność do otwartego wyrażania uczuć jest piękna i inspirująca. Każde 'kocham', które pada z waszych ust, jest jak promień słońca rozświetlający waszą relację.",
         imageOrGifUrl: "/images/fb/kocham.png"
     },
     {
@@ -28,6 +28,11 @@ export const RESULTS_DATA: ReadonlyArray<AnimatedResult> = [
     },
     {
         idx: 5,
+        text: "Wasza zdolność do głębokiego dialogu i dzielenia się myślami i uczuciami jest inspirująca.",
+        imageOrGifUrl: "/images/fb/dupa.png"
+    },
+    {
+        idx: 6,
         text: "Na koniec dnia, bez względu na wszystkie trudności i wyzwania, druga osoba jest zawsze blisko. Wasza zdolność do trzymania się nawzajem w chwilach zarówno radości, jak i smutku, jest nieoceniona.",
         imageOrGifUrl: "/images/fb/dobranoc.png"
     },

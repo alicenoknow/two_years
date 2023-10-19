@@ -39,12 +39,12 @@ const Question = ({ num }: { num: number }) => {
     selectedAnswer === idx && selectedAnswer !== correctAnswerIdx;
 
   return (
-    <div>
-      <div className="flex items-center justify-center text-3xl p-16 pt-16">{`Pytanko ${num}:`}</div>
-      <div className="flex items-center justify-center text-xl p-4">
+    <div className="px-12">
+      <div className="flex items-center font-extrabold justify-center text-3xl py-12">{`Pytanko ${num}:`}</div>
+      <div className="flex items-center justify-center text-xl py-4">
         {questionText}
       </div>
-      <div className="flex items-center justify-center text-xl p-4">
+      <div className="flex items-center justify-center text-xl py-4">
         {questionImage && <Image
           src={questionImage}
           priority
