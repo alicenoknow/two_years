@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 import { Answer, Oops } from ".";
 import { QUESTIONS_CONFIG } from "./questions";
@@ -48,13 +47,12 @@ const Question = ({ num }: { num: number }) => {
       </div>
       <div className="flex items-center justify-center text-xl py-4">
         {questionImage &&
-          <Image
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={questionImage}
-            priority
             alt="question image"
             width={IMAGE_SIZE}
             height={IMAGE_SIZE}
-            loading="eager"
           />}
       </div>
       <div className="flex flex-row items-center justify-center">

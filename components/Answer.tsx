@@ -38,13 +38,11 @@ const Answer: React.FC<AnswerProps> = ({
     <div className={`p-4 flex flex-col items-center ${imageClasses}`}>
       {imageOrGifUrl && (
         <div className="mt-4 p-4">
-          <Image
+          <img
             src={imageOrGifUrl}
-            priority
             alt="Image or GIF"
             width={IMAGE_SIZE}
             height={IMAGE_SIZE}
-            loading="eager"
           />
         </div>
       )}
