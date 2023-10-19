@@ -40,21 +40,24 @@ const Question = ({ num }: { num: number }) => {
 
   return (
     <div className="px-12">
-      <div className="flex items-center font-extrabold justify-center text-3xl py-12">{`Pytanko ${num}:`}</div>
+      <div className="flex items-center font-extrabold justify-center text-3xl py-12">
+        {`Pytanko ${num}:`}
+      </div>
       <div className="flex items-center justify-center text-xl py-4">
         {questionText}
       </div>
       <div className="flex items-center justify-center text-xl py-4">
-        {questionImage && <Image
-          src={questionImage}
-          priority
-          alt="question image"
-          width={IMAGE_SIZE}
-          height={IMAGE_SIZE}
-        />}
+        {questionImage &&
+          <Image
+            src={questionImage}
+            priority
+            alt="question image"
+            width={IMAGE_SIZE}
+            height={IMAGE_SIZE}
+            loading="eager"
+          />}
       </div>
       <div className="flex flex-row items-center justify-center">
-
         {answers.map((answer, idx) => (
           <Answer
             key={idx}

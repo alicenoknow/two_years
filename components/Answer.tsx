@@ -44,6 +44,7 @@ const Answer: React.FC<AnswerProps> = ({
             alt="Image or GIF"
             width={IMAGE_SIZE}
             height={IMAGE_SIZE}
+            loading="eager"
           />
         </div>
       )}
