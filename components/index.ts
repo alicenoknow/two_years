@@ -5,5 +5,6 @@ import WelcomeButton from "./WelcomeButton";
 import Oops from "./Oops";
 import Question from "./Question";
 import Card from "./Card";
+import { HeartEmoji, CroissantEmoji} from "./Emojis";
 
-export { Welcome, Card, NiceButton, Answer, WelcomeButton, Oops, Question };
+export { Welcome, HeartEmoji, CroissantEmoji, Card, NiceButton, Answer, WelcomeButton, Oops, Question };

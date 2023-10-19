@@ -2,8 +2,7 @@ import { Welcome, WelcomeButton } from '@/components'
 
 /**
  * todo
- * 4. prepare welcome
- * 6. croissant background animation
+ * 6. heart/croissant background animation
  *  
  */
 
@@ -15,3 +14,4 @@ export default function Home() {
     </main>
   )
 }
+
