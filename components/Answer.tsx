@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { NiceButton } from ".";
+import { ImageWithLoading, NiceButton } from ".";
 
 interface AnswerProps {
   text: string;
@@ -38,12 +38,7 @@ const Answer: React.FC<AnswerProps> = ({
     <div className={`p-4 flex flex-col items-center ${imageClasses}`}>
       {imageOrGifUrl && (
         <div className="mt-4 p-4">
-          <img
-            src={imageOrGifUrl}
-            alt="Image or GIF"
-            width={IMAGE_SIZE}
-            height={IMAGE_SIZE}
-          />
+          <ImageWithLoading imgUrl={imageOrGifUrl} />
         </div>
       )}
       <NiceButton

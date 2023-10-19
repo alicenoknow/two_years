@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { Answer, Oops } from ".";
+import { Answer, ImageWithLoading, Oops } from ".";
 import { QUESTIONS_CONFIG } from "./questions";
 
 const IMAGE_SIZE = 300;
@@ -45,15 +45,9 @@ const Question = ({ num }: { num: number }) => {
       <div className="flex items-center justify-center text-xl py-4">
         {questionText}
       </div>
-      <div className="flex items-center justify-center text-xl py-4">
+      <div className="flex items-center justify-center text-xl py-4 blur-load">
         {questionImage &&
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={questionImage}
-            alt="question image"
-            width={IMAGE_SIZE}
-            height={IMAGE_SIZE}
-          />}
+          <ImageWithLoading imgUrl={questionImage} />}
       </div>
       <div className="flex flex-row items-center justify-center">
         {answers.map((answer, idx) => (
