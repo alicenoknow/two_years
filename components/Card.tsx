@@ -15,7 +15,7 @@ const Card = ({ number, text, imageOrGifUrl }: CardProps) => {
             <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white text-2xl md:text-3xl lg:text-4xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Powód {number}</span>
             </h1>
         </div>
-        <div className={`showme-${number % 2 ? "left" : "right"} p-4 px-24 md:p-8 md:px-96`}>
+        <div className={`showme-${number % 2 ? "left" : "right"} p-4 px-12 md:p-8 md:px-96`}>
             <div className="pb-4 ">{text}</div>
             <Image
                 src={imageOrGifUrl}
