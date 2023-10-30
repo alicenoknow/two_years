@@ -8,7 +8,7 @@ const Page = ({ params }: { params: { questionId: string } }) => {
     if (isNaN(questionNum)) {
         return <Oops />;
     }
-    return <Question num={questionNum} />;
+    return <div className='overflow-y-scroll no-scrollbar'><Question num={questionNum} /></div>;
 }
 
 export default Page;
