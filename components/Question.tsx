@@ -39,13 +39,13 @@ const Question = ({ num }: { num: number }) => {
 
   return (
     <div className="px-12">
-      <div className="flex items-center font-extrabold justify-center text-3xl py-12">
+      <div className="flex items-center font-extrabold justify-center text-2xl py-6 md:text-3xl md:py-12">
         {`Pytanko ${num}:`}
       </div>
-      <div className="flex items-center justify-center text-xl py-4">
+      <div className="flex items-center justify-center md:text-xl py-4">
         {questionText}
       </div>
-      <div className="flex items-center justify-center text-xl py-4 blur-load">
+      <div className="flex items-center justify-center md:text-xl py-4 blur-load">
         {questionImage &&
           <ImageWithLoading imgUrl={questionImage} />}
       </div>

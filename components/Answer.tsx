@@ -35,9 +35,9 @@ const Answer: React.FC<AnswerProps> = ({
   const imageClasses = isShaking ? "shake" : "";
 
   return (
-    <div className={`p-4 flex flex-col items-center ${imageClasses}`}>
+    <div className={`p-1 md:p-4 flex flex-col items-center ${imageClasses}`}>
       {imageOrGifUrl && (
-        <div className="mt-4 p-4">
+        <div className="mt-2 md:mt-4 p-2 md:p-4">
           <ImageWithLoading imgUrl={imageOrGifUrl} />
         </div>
       )}
